@@ -1,9 +1,19 @@
+
+import ContactSectionPreview from '@/components/sections/ContactSectionPreview'
+import IntroductionMyself from '@/components/sections/IntroductionMyself'
+import MyselfSection from '@/components/sections/MyselfHeroSection'
+import ServiceProvided from '@/components/sections/ServiceProvided'
+import SkillSection from '@/components/sections/SkillSection'
 import React from 'react'
 
 const aboutPage = () => {
   return (
-    <div className='bg-green-900'>
-        <h1 className='text-7xl'>About Page</h1>
+    <div> 
+      <MyselfSection />
+      <IntroductionMyself />
+      <ServiceProvided />
+      <SkillSection />
+      <ContactSectionPreview />
     </div>
   )
 }

@@ -15,7 +15,8 @@ const config: Config = {
       },
       fontFamily: {
         Oswald: ["Oswald", "sans-serif"],
-        Condensed: ["IBM Plex Sans Condensed", "sans-serif"]
+        Condensed: ["IBM Plex Sans Condensed", "sans-serif"],
+        Noto : ["Noto Color Emoji", "sans-serif"],
        },
     },
   },

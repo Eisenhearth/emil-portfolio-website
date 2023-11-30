@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@100;200;300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.button {
+  @apply 
+  inline-block
+  relative
+  cursor-pointer
+  transition-all
+  duration-1000
+  font-bold
+  before:content-['']
+  before:absolute
+  before:-bottom-[1px]
+  before:left-0
+  before:w-0
+  before:h-[1.5px]
+  before:opacity-0
+  before:transition-all
+  before:duration-1000
+  before:bg-black
+  before:dark:bg-[#fffff4]
+  dark:text-[#fffff4]
+  hover:before:w-11/12
+  hover:before:opacity-100;
+}
+
+.project-button {
+  @apply 
+  inline-block
+  relative
+  cursor-pointer
+  transition-all
+  duration-1000
+  font-bold
+  before:content-['']
+  before:absolute
+  before:-bottom-[1px]
+  before:left-0
+  before:w-0
+  before:h-[1.5px]
+  before:opacity-0
+  before:transition-all
+  before:duration-1000
+  before:bg-[#fffff4]
+  before:dark:bg-[#fffff4]
+  dark:text-[#fffff4]
+  hover:before:w-11/12
+  hover:before:opacity-100;
+}
+
+
+
+/* .button-white {
+  @apply 
+  inline-block
+  relative
+  cursor-pointer
+  transition-all
+  font-bold
+  duration-1000
+  before:content-['']
+  before:absolute
+  before:-bottom-[1px]
+  before:left-0
+  before:w-0
+  before:h-[1.5px]
+  before:opacity-0
+  before:transition-all
+  before:duration-1000
+  before:bg-[#fffff4]
+  hover:before:w-11/12
+  hover:before:opacity-100
+} */
+
+
+*{
+  margin:0;
+  padding:0;
+
+ }
+
+
+
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */

@@ -14,6 +14,7 @@ const Navbar = () => {
 
   const [mobileNav, setMobileNav] = useCycle(false, true)
 
+  // Dark Mode
   const [darkMode, setDarkMode] = useState(true)
 
     useEffect(() => {

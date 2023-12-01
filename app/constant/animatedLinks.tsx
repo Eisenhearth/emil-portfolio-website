@@ -6,7 +6,7 @@ interface animatedProps {
 }
 
 
-export default function AnimatedLink({ title }) {
+export default function AnimatedLink({ title }: animatedProps) {
     const [isHovered, setHovered] = useState(false)
     return (
         <motion.div 
@@ -64,7 +64,13 @@ const letterAnimationTwo = {
     },
 }
 
-const AnimatedWord = ({ title, animation, isHovered }) => {
+interface AnimatedWordProps {
+    title: string,
+    animation: any,
+    isHovered: any
+}
+
+const AnimatedWord = ({ title, animation, isHovered } : AnimatedWordProps) => {
     return (
         <motion.span variants={titleAnimation} initial="rest" animate={isHovered ? "hover" : "rest" } className="whitespace-nowrap relative">
             {title
@@ -73,7 +79,7 @@ const AnimatedWord = ({ title, animation, isHovered }) => {
                     character === " " ? (
                         <span key={i}>&nbsp;</span>
                     ) : (
-                        <motion.span variants={animation} className="relative inline-block whitespace-nowrap">{character}</motion.span>
+                        <motion.span key={i} variants={animation} className="relative inline-block whitespace-nowrap">{character}</motion.span>
                     )
                 )}
         </motion.span>

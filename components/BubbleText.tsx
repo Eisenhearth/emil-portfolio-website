@@ -36,11 +36,11 @@ const BubbleText = () => {
 
                 if (leftNeighbor) {
                     leftNeighbor.style.fontWeight = "900";
-                    leftNeighbor.style.color = darkMode ? "[#fffff4]" : "#000000";;
+                    leftNeighbor.style.color = darkMode ? "[#fffff4]" : "#000000";
                 }
                 if (rightNeighbor) {
                     rightNeighbor.style.fontWeight = "900";
-                    rightNeighbor.style.color = darkMode ? "[#fffff4]" : "#000000";;
+                    rightNeighbor.style.color = darkMode ? "[#fffff4]" : "#000000";
                 }
             });
 
@@ -53,11 +53,11 @@ const BubbleText = () => {
 
                 if(leftNeighbor) {
                     leftNeighbor.style.fontWeight = "500";
-                    leftNeighbor.style.color = darkMode ? "[#fffff4]" : "#000000";;
+                    leftNeighbor.style.color = darkMode ? "[#fffff4]" : "#000000";
                   }
                 if(rightNeighbor) {
                     rightNeighbor.style.fontWeight = "500";
-                    rightNeighbor.style.color = darkMode ? "[#fffff4]" : "#000000";;
+                    rightNeighbor.style.color = darkMode ? "[#fffff4]" : "#000000";
                   }
             });
         });

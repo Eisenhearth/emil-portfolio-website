@@ -1,8 +1,6 @@
 'use client';
 
 import React, {useState, useEffect} from 'react'
-import Image from 'next/image';
-import logo from '../public/assets/emil_logo.svg'
 import Link from 'next/link'
 
 import { motion, useCycle, AnimatePresence, MotionConfig } from 'framer-motion';
@@ -14,7 +12,6 @@ const Navbar = () => {
 
   const [mobileNav, setMobileNav] = useCycle(false, true)
 
-  // Dark Mode
   const [darkMode, setDarkMode] = useState(true)
 
     useEffect(() => {
@@ -118,7 +115,7 @@ const Navbar = () => {
 									}} className='text-white font-Condensed'>
 
                   {navLinks.map((nav) => (
-                    // eslint-disable-next-line react/jsx-key
+                  
                     <Link onClick={() => setMobileNav()} href={nav.link}><motion.li key={nav.id} className='text-6xl font-bold py-3'>{nav.title}</motion.li></Link>
                   ))}
                 </motion.ul>
@@ -132,7 +129,7 @@ const Navbar = () => {
           <div className='hidden md:flex'>
             <ul className='flex items-center gap-8 font-Condensed text-lg font-black dark:text-[#fffff4] mx-auto'>
             {navLinks.map((nav) => (
-              // eslint-disable-next-line react/jsx-key
+           
               <div className='relative overflow-hidden'>
                 <Link href={nav.link} key={nav.id}><AnimatedLink title={nav.title}/></Link>
               </div>

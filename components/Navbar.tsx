@@ -131,7 +131,7 @@ const Navbar = () => {
             {navLinks.map((nav) => (
            
               <div className='relative overflow-hidden'>
-                <Link href={nav.link} key={nav.id}><AnimatedLink title={nav.title}/></Link>
+                <Link href={nav.link} key={nav.id}><AnimatedLink key={nav.id} title={nav.title}/></Link>
               </div>
             ))}
             </ul>

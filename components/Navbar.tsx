@@ -116,7 +116,9 @@ const Navbar = () => {
 
                   {navLinks.map((nav) => (
                   
-                    <Link onClick={() => setMobileNav()} href={nav.link}><motion.li key={nav.id} className='text-6xl font-bold py-3'>{nav.title}</motion.li></Link>
+                    <Link key={nav.id} onClick={() => setMobileNav()} href={nav.link}>
+                      <motion.li className='text-6xl font-bold py-3'>{nav.title}</motion.li>
+                    </Link>
                   ))}
                 </motion.ul>
               </div>
@@ -131,7 +133,7 @@ const Navbar = () => {
             {navLinks.map((nav) => (
            
               <div className='relative overflow-hidden'>
-                <Link href={nav.link} key={nav.id}><AnimatedLink key={nav.id} title={nav.title}/></Link>
+                <Link href={nav.link} key={nav.id}><AnimatedLink title={nav.title}/></Link>
               </div>
             ))}
             </ul>

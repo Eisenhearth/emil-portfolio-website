@@ -117,7 +117,7 @@ const Navbar = () => {
                   {navLinks.map((nav) => (
                   
                     <Link key={nav.id} onClick={() => setMobileNav()} href={nav.link}>
-                      <motion.li key={nav.id} className='text-6xl font-bold py-3'>{nav.title}</motion.li>
+                      <motion.li className='text-6xl font-bold py-3'>{nav.title}</motion.li>
                     </Link>
                   ))}
                 </motion.ul>
@@ -132,8 +132,8 @@ const Navbar = () => {
             <ul className='flex items-center gap-8 font-Condensed text-lg font-black dark:text-[#fffff4] mx-auto'>
             {navLinks.map((nav) => (
            
-              <div className='relative overflow-hidden'>
-                <Link key={nav.id} href={nav.link}><AnimatedLink key={nav.id}  title={nav.title}/></Link>
+              <div key={nav.id} className='relative overflow-hidden'>
+                <Link  href={nav.link}><AnimatedLink  title={nav.title}/></Link>
               </div>
             ))}
             </ul>
